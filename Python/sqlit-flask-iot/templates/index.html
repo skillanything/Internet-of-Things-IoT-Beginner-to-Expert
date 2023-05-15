@@ -1,0 +1,15 @@
+<table>
+    <tr>
+      <th>Timestamp</th>
+      <th>Temperature</th>
+      <th>Humidity</th>
+    </tr>
+    {% for d in data %}
+    <tr>
+      <td>{{ d.timestamp }}</td>
+      <td>{{ d.temperature }}</td>
+      <td>{{ d.humidity }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  
